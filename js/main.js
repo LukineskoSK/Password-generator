@@ -92,7 +92,6 @@ form.addEventListener('submit', (e)=>{
   let tmp = "";
   while(!isPasswordValid(tmp)){
     tmp = generatePassword();
-    console.log(tmp)
   }
   
   // Pridanie hesla do Inputu
