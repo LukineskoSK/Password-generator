@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+    <main>
+        <form action="GET">
+            <label for="result">Result</label>
+            <input type="text" name="result" id="result" readonly>
+
+            <label for="lengthInput" id="lengthLabel">Length:</label>
+            <div class="range-container">
+                <span class="range-min">6</span> 
+                <input type="range" name="length" id="lengthInput" min="6" max="32" value="19" step="1">
+                <span class="range-max">32</span> 
+            </div>
+
+            <label for="">Settings</label>
+            <label for="includeLowercase" class="checkbox-container switch">
+                Include Lowercase
+                <input type="checkbox" name="includeLowercase" id="includeLowercase">
+                <span class="slider"></span>
+            </label>
+            <label for="includeUppercase" class="checkbox-container switch">
+                Include Uppercase
+                <input type="checkbox" name="includeUppercase" id="includeUppercase">
+                <span class="slider"></span>
+            </label>
+            <label for="includeNumber" class="checkbox-container switch">
+                Include Number
+                <input type="checkbox" name="includeNumber" id="includeNumber">
+                <span class="slider"></span>
+            </label>
+            <label for="includeSymbol" class="checkbox-container switch">
+                Include Symbol
+                <input type="checkbox" name="includeSymbol" id="includeSymbol">
+                <span class="slider"></span>
+            </label>
+            
+            <button type="submit">Generate Password</button>
+            
+        </form>
+    </main>
+    <footer>
+        <div>© 2024 Password Generator. All rights reserved</div>
+        <div>Powered by <span id="author">Lukas Moravcik</span></div>
+    </footer>
+</body>
+</html>
