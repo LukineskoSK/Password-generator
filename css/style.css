@@ -101,6 +101,7 @@ button{
     letter-spacing: 0.3rem;
     padding: 1rem 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /*----------RANGE----------*/
