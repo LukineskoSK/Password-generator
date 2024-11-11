@@ -60,11 +60,31 @@ form {
     padding: 2rem;
     gap: 1rem;                     
 }
+.copy-container{
+    position: relative;
+    width: 100%;
+}
 #result{
     font-size: 1.5rem;
-    padding-left: 1rem;
     color: #D9D4CC;
     letter-spacing: 2px;
+
+    width: 100%;
+    padding: 0.5rem 2.2rem 0.5rem 0.75rem; 
+    border: 1px solid #ccc;
+}
+
+.copy-container img{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 input, .checkbox-container{
     background: #201d41;

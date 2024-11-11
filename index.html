@@ -16,8 +16,15 @@
     </header>
     <main>
         <form action="GET">
-            <label for="result">Result</label>
-            <input type="text" name="result" id="result" readonly autocomplete="off">
+            <label for="result">
+                Result
+                <div class="copy-container">
+                    <input type="text" name="result" id="result" readonly autocomplete="off">
+                    <img src="./img/copy.png" alt="Copy">
+                </div>
+            </label>
+            
+        
 
             <label for="lengthInput" id="lengthLabel">Length:</label>
             <div class="range-container">

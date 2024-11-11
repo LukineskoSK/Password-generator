@@ -13,6 +13,7 @@ const includeLowercase = form.querySelector('#includeLowercase');
 const includeUppercase = form.querySelector('#includeUppercase');
 const includeNumber = form.querySelector('#includeNumber');
 const includeSymbol = form.querySelector('#includeSymbol');
+const copyIcon = form.querySelector(".copy-container img");
 
 // NASTAVENIE POCIATOCNYCH HODNOT
 lengthLabel.textContent = `Length: ${lengthInput.value}`;
@@ -96,4 +97,17 @@ form.addEventListener('submit', (e)=>{
   
   // Pridanie hesla do Inputu
   finalPassword.value = tmp;
+})
+
+// COPY TO CLIPBOARD
+function copyToClipboard(){
+  
+  navigator.clipboard.writeText(finalPassword.value)
+    .then(()=>{
+      console.log("Copied");
+    })
+}
+
+copyIcon.addEventListener('click', ()=> {
+  copyToClipboard();
 })
